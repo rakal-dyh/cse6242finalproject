@@ -1,0 +1,68 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
+  </script>
+  <script src="https://d3js.org/d3.v4.min.js" ></script>
+  <script src="lib/mySort.js"></script>
+  <script src="lib/distanceLatLon.js"></script>
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJ65vV8A0PIiVDnyUhaBha2YxOIgvcrNY">
+  </script>
+
+  <title>interface</title>
+</head>
+
+<style>
+  div.input {
+    width: 600px;
+    height: 150px;
+    position: relative;
+  }
+
+  #map {
+    height: 400px;
+    width: 100%;
+  }
+</style>
+
+
+<body>
+  <div id="begindiv"></div>
+  <div id="msg"></div>
+  <form name="user_info" method="post" action="">
+    origin：<input type="text" name="location" />
+    destination: <input type="text" name="location2" />
+    month: <input type="text" name="month" />
+    day: <input type="text" name="day" />
+    time: <input type="text" name="time" />
+    bike number: <input type="text" name="number" />
+    stationid: <input type="text" name="stationid" />
+    <input type="button" value="submit" onClick="saveUserInfo()">
+  </form>
+  <h3>Google Maps</h3>
+  <div id="map"></div>
+  <script>
+    console.log("Military Rd NW & Reno Rd NW, DC")
+    console.log("dc convention center")
+  </script>
+  <script language="javascript" src="./js/getuserinfo.js"></script>
+  <script src="./js/mymapv2.1.js"></script>
+
+  <!--<script language="javascript" src="./js/postprocess.js"></script>-->
+
+  <svg width="960" height="600"></svg>
+  <svg width="960" height="600"></svg>
+  <svg width="960" height="600"></svg>
+  <script src="./js/linechart.js"></script>
+</body>
+
+
+
+
+
+
+
+
+</html>
